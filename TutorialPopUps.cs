@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TutorialPopUps : MonoBehaviour {
 
@@ -29,9 +30,14 @@ public class TutorialPopUps : MonoBehaviour {
 			Time.timeScale = 1f;
 			Debug.Log (clickCount);
 		}else if( clickCount == 3){
-			tutorialBtn.GetComponentInChildren<Text> ().text = " Go on, give it a try.";
+			tutorialBtn.GetComponentInChildren<Text> ().text = " Go on, give it a try. But this is just a test run. \nAfter this you'll need to make sure you don't \nclick too much!";
 			clickCount++;
 			Debug.Log (clickCount);
+		}else if( clickCount == 4){
+			tutorialBtn.GetComponentInChildren<Text> ().text = " Looks Like you've got the hang of it! \nLet's go save the town! \n\nClick to continue";
+			clickCount++;
+		}else if( clickCount == 5){
+			SceneManager.LoadScene ("MainMenu");
 		}
 		
 	}

@@ -9,6 +9,11 @@ public class MainMenuController : MonoBehaviour {
 	public void StartGame (){
 		SceneManager.LoadScene("EasyDif");
 	}
+
+	public void Tutorial(){
+		SceneManager.LoadScene("Tutorial");
+	}
+
 	/*
 	// Opens High Score Scene
 	public void HighScoreScreen (){

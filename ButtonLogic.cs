@@ -28,6 +28,10 @@ public class ButtonLogic : MonoBehaviour {
 	private bool allPressedCorrectly = false;
 
 
+	void Awake (){
+		Time.timeScale = 1f;
+	}
+
 	public void PressedLetter1(){
 
 		currentPress = 1;

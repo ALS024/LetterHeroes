@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChange : MonoBehaviour {
+public class SecondStageSceneChange : MonoBehaviour {
 
 	public void OnTriggerEnter2D (Collider2D coll) {
 
-		SceneManager.LoadScene ("EasyDif2");
+		SceneManager.LoadScene ("EasyDif3");
 
 	}
-
 }
